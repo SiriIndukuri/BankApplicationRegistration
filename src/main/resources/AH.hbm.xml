@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.mpowerlogic.Entity.RegistrationRequestEntity" table="Registration">
+        <id name="userName" type="java.lang.String">
+            <column name="userName" />
+            <generator class="increment" />
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="firstName" />
+        </property>
+        
+        <property name="lastName" type="java.lang.String">
+            <column name="lastName" />
+        </property>
+        <property name="password" type="java.lang.String">
+        	<column name="password" />
+        </property>       
+    </class>
+</hibernate-mapping>
